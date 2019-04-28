@@ -10,7 +10,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="登陆"
-        android:textColor="@color/avoscloud_blue"
+        android:textColor="@color/green"
         android:textSize="50dp" />
 
     <LinearLayout
@@ -32,6 +32,8 @@
                 android:drawableLeft="@mipmap/icon_user"
                 android:drawablePadding="15dp"
                 android:hint="请输入用户名"
+                android:inputType="text"
+                android:lines="1"
                 android:maxLines="1" />
         </LinearLayout>
 
@@ -46,7 +48,9 @@
                 android:layout_height="60dp"
                 android:drawableLeft="@mipmap/icon_psd"
                 android:drawablePadding="15dp"
-                android:hint="请输入用户名"
+                android:lines="1"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
                 android:maxLines="1" />
         </LinearLayout>
 
@@ -61,7 +65,7 @@
                 android:layout_width="300dp"
                 android:layout_height="40dp"
                 android:layout_centerHorizontal="true"
-                android:background="@drawable/bg_corner_register"
+                android:background="@drawable/bg_corner_login"
                 android:gravity="center"
                 android:text="登陆"
                 android:textSize="20dp" />

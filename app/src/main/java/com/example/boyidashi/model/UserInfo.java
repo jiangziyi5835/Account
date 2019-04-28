@@ -1,4 +1,4 @@
-package com.example.account.model;
+package com.example.boyidashi.model;
 
 public class UserInfo {
     String status;

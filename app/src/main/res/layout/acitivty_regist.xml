@@ -31,9 +31,9 @@
                 android:layout_height="60dp"
                 android:drawableLeft="@mipmap/icon_user"
                 android:drawablePadding="15dp"
-
                 android:hint="请输入用户名"
-                android:inputType=""
+                android:inputType="text"
+                android:lines="1"
                 android:maxLines="1" />
         </LinearLayout>
 
@@ -48,8 +48,9 @@
                 android:layout_height="60dp"
                 android:drawableLeft="@mipmap/icon_psd"
                 android:drawablePadding="15dp"
-                android:hint="请输入用户名"
+                android:hint="请输入密码"
                 android:inputType="textPassword"
+                android:lines="1"
                 android:maxLines="1" />
         </LinearLayout>
 
@@ -67,7 +68,6 @@
                 android:background="@drawable/bg_corner_register"
                 android:gravity="center"
                 android:text="注册"
-
                 android:textSize="20dp" />
 
             <TextView

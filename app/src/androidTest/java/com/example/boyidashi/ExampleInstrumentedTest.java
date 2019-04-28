@@ -1,4 +1,4 @@
-package com.example.account;
+package com.example.boyidashi;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

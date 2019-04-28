@@ -1,4 +1,4 @@
-package com.example.account;
+package com.example.boyidashi;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.account.ui.login;
+package com.example.boyidashi.ui.login;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,13 +12,11 @@ import android.widget.Toast;
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.LogInCallback;
-import com.example.account.Application.ListUsedDataActivity;
-import com.example.account.Application.MyApplicaiton;
-import com.example.account.R;
-import com.example.account.model.UserInfo;
-import com.example.account.ui.regist.RegistActivity;
-
-import org.w3c.dom.Text;
+import com.example.boyidashi.ui.ues.ListUsedDataActivity;
+import com.example.boyidashi.Application.MyApplicaiton;
+import com.example.boyidashi.R;
+import com.example.boyidashi.model.UserInfo;
+import com.example.boyidashi.ui.regist.RegistActivity;
 
 public class LoginActivity extends Activity implements View.OnClickListener {
     private EditText etUserName, etUserPsd;
@@ -82,6 +80,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                         applicaiton.updataUserInfo(userInfo);
                         Toast.makeText(applicaiton, "登陆成功", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(LoginActivity.this, ListUsedDataActivity.class));
+                        finish();
                     } else
                         Toast.makeText(applicaiton, e.getMessage(), Toast.LENGTH_SHORT).show();
 

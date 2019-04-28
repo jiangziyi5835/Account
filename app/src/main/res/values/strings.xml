@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">Account</string>
+    <string name="app_name">博易大师</string>
     <string name="adduse">添加支出</string>
     <string name="count">统计</string>
-    <string name="usetype">支出</string>
+    <string name="usetype">支出类型</string>
+    <string name="money">支出金额</string>
+    <string name="usednum">总支出：</string>
+    <string name="date">日期</string>
+
 </resources>

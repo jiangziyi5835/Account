@@ -1,4 +1,4 @@
-package com.example.account.ui.regist;
+package com.example.boyidashi.ui.regist;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,8 +13,8 @@ import android.widget.Toast;
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.SignUpCallback;
-import com.example.account.R;
-import com.example.account.ui.login.LoginActivity;
+import com.example.boyidashi.R;
+import com.example.boyidashi.ui.login.LoginActivity;
 
 public class RegistActivity extends Activity implements View.OnClickListener {
     private EditText etUserName, etUserPsd;
@@ -59,6 +59,7 @@ public class RegistActivity extends Activity implements View.OnClickListener {
                 public void done(AVException e) {
                     if (e == null) {
                         Toast.makeText(RegistActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(RegistActivity.this,LoginActivity.class));
                     } else {
                             e.getCause();
                         Log.d("loginerror", e.getMessage().toString());

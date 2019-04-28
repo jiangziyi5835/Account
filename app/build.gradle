@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.account"
+            applicationId "com.example.boidashi"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
@@ -46,7 +46,10 @@ allprojects {
         //这里是 LeanCloud 的包仓库
         maven {
             url "http://mvn.leancloud.cn/nexus/content/repositories/public"
+
         }
+        maven { url "https://jitpack.io" }
+        maven { url "http://lib.gcssloop.com/repository/gcssloop-central/" }
     }
 }
 dependencies {
@@ -76,4 +79,6 @@ dependencies {
     implementation ('cn.leancloud.android:avoscloud-search:4.7.10@aar')
     implementation 'org.jetbrains:annotations-java5:15.0'
     implementation 'org.jetbrains:annotations-java5:15.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
 }

@@ -1,12 +1,23 @@
-package com.example.account.model;
+package com.example.boyidashi.model;
+
+import java.util.Date;
 
 public class Used {
+    String id;
     String username;
     float number;
     int useType;
-    String data;
+    Date data;
 
-    public Used(String username, float number, int useType, String data) {
+    public Used(String id, String username, float number, int useType, Date data) {
+        this.id = id;
+        this.username = username;
+        this.number = number;
+        this.useType = useType;
+        this.data = data;
+    }
+
+    public Used(String username, float number, int useType, Date data) {
         this.username = username;
         this.number = number;
         this.useType = useType;
@@ -17,6 +28,14 @@ public class Used {
         this.username = username;
         this.number = number;
         this.useType = useType;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getUsername() {
@@ -43,11 +62,11 @@ public class Used {
         this.useType = useType;
     }
 
-    public String getData() {
+    public Date getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(Date data) {
         this.data = data;
     }
 }
